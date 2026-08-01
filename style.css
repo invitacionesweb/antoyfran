@@ -529,6 +529,8 @@ audio::-webkit-media-controls-current-time-display {
 .accordion-content {
     max-height: 0;
     max-width: 700px;
+    text-align: center;
+    margin: auto;
     height: auto;
     overflow: hidden;
     padding: 0 15px;
