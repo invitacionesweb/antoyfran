@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anto y Fran</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.0/font/bootstrap-icons.css"
+        integrity="sha384-7ynz3n3tAGNUYFZD3cWe5PDcE36xj85vyFkawcF6tIwxvIecqKvfwLiaFdizhPpN" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mediaelement/4.2.16/mediaelementplayer.min.css">
+
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+
+  <div class="background"></div>
+
+  <div class="audiodiv">
+    <audio id="myAudio" preload="auto">
+      <source src="./ALEX.mp3" type="audio/mpeg">
+    </audio>
+    <div id="playPauseBtn" class="play">
+      <img src="./img/notamusical.png" alt="Icono de música">
+    </div>
+  </div>
+
+  <p data-aos="fade-up" class="titulocontador">Faltan:</p>
+  <div class="contador">
+    <div class="bloque">
+      <div data-aos="fade-up" id="dias" class="numero"></div>
+      <div data-aos="fade-up" class="etiqueta">Días</div>
+    </div>
+    <div class="bloque">
+      <div data-aos="fade-up" id="horas" class="numero"></div>
+      <div data-aos="fade-up" class="etiqueta">horas</div>
+    </div>
+    <div class="bloque">
+      <div data-aos="fade-up" id="minutos" class="numero"></div>
+      <div data-aos="fade-up" class="etiqueta">minutos</div>
+    </div>
+    <div class="bloque">
+      <div data-aos="fade-up" id="segundos" class="numero"></div>
+      <div data-aos="fade-up" class="etiqueta">segundos</div>
+    </div>
+  </div>
+
+  <div class="datos-ubicacion">
+    <div>
+      <div data-aos="fade-down" class="icono0" role="img" aria-label="Ícono decorativo"></div>
+
+    </div>
+    <div class="datos">
+     
+    <div>
+        <p data-aos="fade-up">17:30 Hs -  Chacra San José <br> Camino de la Redención 7095, Montevideo</p>
+        <a data-aos="fade-up" class="boton" target="_blank"
+           href="google.com/maps?sca_esv=66e91e917864057f&output=search&q=Chacra+San+José&source=lnms&fbs=ABfTbFUDadgeu2mn4mYJ8iEZ1GUDd8ABuXxNzQEi57SWOuuPdWieN_sFFlVnsqgdADYGYER9JDrKa3fYklutcg9OTXMECS7QUBQ8hl4AUJHUeL8d-yb6UgEoPaz6ph7vNPmQ9pxGsiHaydjQtsKr5n_d8sQ1pfD6CWsFSdD6sB4rzl_WuwDWVI5e5BqqOvujgCZ9tBZwFdbNSzvYBJDaAepZzZBOWg_JxQ&entry=mc&ved=1t:200715&ictx=111">
+          Cómo llegar
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="novios2">
+   <p>También festejamos <br> por quienes nos enseñaron <br> a celebrar la vida. </p>
+    <div class="icono2">
+      <img data-aos="fade-down" src="./img-editable/icono2.png" alt="">
+    </div>
+    
+</div>
+
+  <div class="novios">
+    <img data-aos="fade-up" src="./img-editable/fotos1.png" alt="">
+    <div class="icono1">
+      <div data-aos="fade-down" class="icon-svg1" role="img" aria-label="Ícono decorativo"></div>
+    </div>
+    <div class="icono2">
+      <div data-aos="fade-down" class="icon-svg2" role="img" aria-label="Ícono decorativo"></div>
+    </div>
+  </div>
+
+  <div class="timeline">
+   <div class="timeline-img"></div>
+  </div>
+
+  <div id="section2" class="accordion">
+    <h3 data-aos="fade-up">Antes de que nos consultes...</h3>
+
+    <div data-aos="fade-up" class="accordion-item">
+      
+      <button class="accordion-header">¿CÓMO ME VISTO?</button>
+      <div class="accordion-content">
+       
+        <p>
+           Queremos que te sientas cómodo/a y canchero/a, pero también que se note que es un día especial. 📸 Las fotos van a quedar para siempre, así que: elegante y con onda. Vestimenta formal.
+        </p>
+      </div>
+    </div>
+
+    <div data-aos="fade-up" class="accordion-item">
+      <button class="accordion-header">¿QUÉ LES REGALO?</button>
+      <div class="accordion-content">
+        
+        <p>Por si queres sumar un mimo a esta nueva etapa:</p>
+        <!--<div class="gift-block">
+          <div class="gift-box">
+            <div class="boton2" onclick="copyToClipboard('aconfirmar')">Copiar CBU</div>
+          </div>
+          <div class="gift-box">
+            <div class="boton2" onclick="copyToClipboard('aconfirmar')">Copiar Alias</div>
+          </div>
+        </div>
+        -->
+        <p>Banco Itaú <br>
+FRANCISCO MARIZCURRENA <br>
+Caja de ahorro n° 8538174 <br>
+Moneda: USD</p>
+<p>
+Banco Itaú <br>
+FRANCISCO MARIZCURRENA <br>
+Caja de ahorro n° 8538218 <br>
+Moneda: UYU</p>
+      </div>
+    </div>
+     <div data-aos="fade-up" class="accordion-item">
+      <button class="accordion-header">¿QUÉ TENGO QUE SABER?</button>
+      <div class="accordion-content">
+       
+        <p>Anda bien descansado y pronto para quedarte hasta el final porque hay varias sorpresas...</p>
+      </div>
+    </div>
+    <div data-aos="fade-up" class="accordion-item">
+      <button class="accordion-header">¿DÓNDE ESTACIONO?</button>
+      <div class="accordion-content">
+       
+        <p>No te preocupes, hay espacio para estacionar con comodidad.</p>
+      </div>
+    </div>
+
+    <div data-aos="fade-up" class="accordion-item">
+      <button class="accordion-header">¿QUÉ PASA SI TENGO MÁS DUDAS?</button>
+      <div class="accordion-content">
+      
+        <p>Creemos que todas tus dudas estan resueltas pero si tenes mas consultas no dudes en escribirnos a nosotros hasta 48 hs antes del evento o a nuestros familares más cercanos dentro de las 48 hs previas.
+
+</p>
+        <br> <a data-aos="fade-up" class="boton2" target="_blank"  href="https://www.instagram.com/siquiero.arg/">@siquiero.arg</a>
+        <br> <br>
+    </div>
+    </div>
+
+    <div class="icono3">
+      <div data-aos="fade-down" class="icon-svg3" role="img" aria-label="Ícono decorativo"></div>
+    </div>
+    <div class="icono4">
+      <div data-aos="fade-down" class="icon-svg4" role="img" aria-label="Ícono decorativo"></div>
+    </div>
+  </div>
+
+  <div class="forms">
+    <form name="asistenciaform" method="POST"
+          action=""
+          class="formulario">
+     <div class="rsvp">
+      <div data-aos="fade-up" class="rsvp" role="img" aria-label="Ícono decorativo"></div>
+    </div>
+      <label data-aos="fade-up" class="formtitle">Sólo faltas vos, venís?</label>
+      <p data-aos="fade-up">RECORDÁ COMPLETAR UN FORMULARIO POR PERSONA. <br> HACELO ANTES DEL 25 DE AGOSTO.</p>
+
+      <div class="radio-group">
+        <label class="radio-option">
+          <input type="radio" name="ASISTENCIA" value="sí" required>
+          <span>Sí</span>
+        </label>
+        <label class="radio-option">
+          <input type="radio" name="ASISTENCIA" value="no">
+          <span>No</span>
+        </label>
+      </div>
+
+      <input type="text" name="NOMBRE" placeholder="Nombre" required>
+      <input type="text" name="APELLIDO" placeholder="Apellido" required>
+
+      <select name="DIETA" required>
+        <option value="" disabled selected>¿Alguna dieta especial?</option>
+        <option value="Nada">Nada / Como de todo</option>
+        <option value="Vegetariano">Vegetariano</option>
+        <option value="Vegano">Vegano</option>
+        <option value="Celíaco">Celíaco</option>
+      </select>
+
+      <textarea name="MENSAJE" placeholder="Dejale un mensaje a los novios 🤍"></textarea>
+
+      <button type="submit" class="boton">Enviar</button>
+    </form>
+
+    
+  </div>
+
+  <div class="playlist">
+    <div class="novios-div">
+      <h3>Vamos a mover los pies...</h3>
+      <p>RECOMENDALE UNA CANCIÓN AL DJ</p>
+      <div class="playlist-spotify">
+        <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/playlist/3rSsRHHtJLqUd9sBF0NVSd?utm_source=generator&si=e1a244c820fc4491" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+      </div>
+    </div>
+    <div class="icono5">
+      <div data-aos="fade-down" class="icon-svg5" role="img" aria-label="Ícono decorativo"></div>
+    </div>
+    <div class="icono6">
+      <div data-aos="fade-down" class="icon-svg6" role="img" aria-label="Ícono decorativo"></div>
+    </div> 
+
+  </div>
+
+<div class="carrusel-polaroid">
+  <div class="carrusel-track">
+    
+ 
+    <div class="carrusel-slide" data-index="0">
+      <h3>La propuesta</h3>
+      <div class="polaroid">
+        <img src="./img-editable/carrusel1.png" alt="">
+      </div>
+      <p>Así empezó todo.</p>
+      
+    </div>
+ 
+    <div class="carrusel-slide" data-index="1">
+      <h3>El primer viaje</h3>
+      <div class="polaroid">
+        <img src="./img-editable/carrusel2.png" alt="">
+      </div>
+      <p>Nuestro primer viaje juntos.</p>
+     
+    </div>
+ 
+    <div class="carrusel-slide" data-index="2">
+      <h3>La mudanza</h3>
+      <div class="polaroid">
+        <img src="./img-editable/carrusel3.png" alt="">
+      </div>
+      <p>Nuestro primer depto.</p>
+    
+    </div>
+ 
+    <div class="carrusel-slide" data-index="3">
+      <h3>El sí</h3>
+      <div class="polaroid">
+        <img src="./img-editable/carrusel4.png" alt="">
+      </div>
+      <p>Y acá estamos.</p>
+     
+    </div>
+ 
+  </div>
+ 
+  <div class="carrusel-nav">
+    <div class="carrusel-dots"></div>
+  </div>
+</div>
+ 
+<!--
+
+<div class="fotos-stack-section">
+  <h3>Sonrei que hay boda</h3>
+  <p>SACATE UNA FOTO EN NUESTRO PHOTOBOOTH PARA EMPEZAR A VIVIR ESTE FIESTÓN 🎉✨</p>
+ 
+  <div class="fotos-stack" id="fotosStack">
+    <div class="foto">
+      <img src="./img-editable/foto-stack-1.png" alt="">
+    </div>
+    <div class="foto">
+      <img src="./img-editable/foto-stack-2.png" alt="">
+    </div>
+    <div class="foto">
+      <img src="./img-editable/foto-stack-3.png" alt="">
+    </div>
+  </div>
+  <br>
+ 
+  <a href="#" class="boton" target="_blank">Photobooth</a>
+</div>
+-->
+ 
+<div class="novios">
+    <img data-aos="fade-up" src="./img-editable/fotos2.png" alt="">
+    <div class="icono1">
+      <div data-aos="fade-down" class="icon-svg1" role="img" aria-label="Ícono decorativo"></div>
+    </div>
+    <div class="icono2">
+      <div data-aos="fade-down" class="icon-svg2" role="img" aria-label="Ícono decorativo"></div>
+    </div>
+ </div>
+
+<div class="end">
+    <div class="icono7">
+      <div data-aos="fade-down" class="icon-svg7" role="img" aria-label="Ícono decorativo"></div>
+    </div>
+    <h2 data-aos="fade-up">Anto & Fran</h2>
+    <p data-aos="fade-down">Te esperamos</p>
+ </div>
+
+  <footer>
+    <div class="contenido">
+      <div>
+        <img src="./img/logosiquiero.png" alt="icono si quiero">
+        <p>
+          Hecho con &hearts; <br>
+          &#169; <b>Si,quiero!</b> - invitaciones inteligentes. <br>
+          Todos los derechos reservados.
+        </p>
+      </div>
+      <div class="contenido-list">
+        <ul>
+          <li><a target="_blank" href="https://www.instagram.com/siquiero.arg/"><i class="bi bi-instagram"></i></a></li>
+          <li><a target="_blank" href="https://www.facebook.com/Invitaciones-web-112187784608681"><i class="bi bi-facebook"></i></a></li>
+          <li><a target="_blank" href="mailto:siquiero.invitaciones@gmail.com"><i class="bi bi-envelope"></i></a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./countdwon.js"></script>
+  <script src="./reproductor.js"></script>
+  <script src="./form.js"></script>
+  <script src="script.js"></script>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mediaelement/4.2.16/mediaelement-and-player.min.js"></script>
+
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  const stack = document.getElementById('fotosStack');
+  const fotos = Array.from(stack.querySelectorAll('.foto'));
+  if (fotos.length === 0) return;
+ 
+  const offsets = [
+    { rotate: -6, x: -12, y: 8 },
+    { rotate: 5,  x: 10,  y: 12 },
+    { rotate: -4, x: 6,   y: -6 }
+  ];
+ 
+  let current = 0;
+ 
+  function render() {
+    fotos.forEach((foto, i) => {
+      if (i === current) {
+        foto.style.transform = 'translate(0,0) rotate(0deg) scale(1)';
+        foto.style.zIndex = fotos.length + 1;
+      } else {
+        const dist = (i - current + fotos.length) % fotos.length;
+        const off = offsets[dist % offsets.length];
+        foto.style.transform = `translate(${off.x}px, ${off.y}px) rotate(${off.rotate}deg) scale(0.94)`;
+        foto.style.zIndex = fotos.length - dist;
+      }
+    });
+  }
+ 
+  render();
+  setInterval(() => {
+    current = (current + 1) % fotos.length;
+    render();
+  }, 3000);
+});
+</script>
+
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  const track = document.querySelector('.carrusel-track');
+  const slides = Array.from(track.querySelectorAll('.carrusel-slide'));
+  const dotsWrap = document.querySelector('.carrusel-dots');
+  let current = 0;
+ 
+  const offsets = [
+    { rotate: -7, x: -16, y: 10 },
+    { rotate: 6,  x: 14,  y: 14 },
+    { rotate: -4, x: 8,   y: -8 },
+    { rotate: 8,  x: -10, y: 6 }
+  ];
+ 
+  slides.forEach((_, i) => {
+    const dot = document.createElement('span');
+    dot.addEventListener('click', () => { current = i; render(); });
+    dotsWrap.appendChild(dot);
+  });
+  const dots = Array.from(dotsWrap.children);
+ 
+  function render() {
+    slides.forEach((slide, i) => {
+      const polaroid = slide.querySelector('.polaroid');
+      if (i === current) {
+        polaroid.style.transform = 'translate(0,0) rotate(0deg) scale(1)';
+        slide.style.zIndex = slides.length + 1;
+        slide.classList.add('is-active');
+      } else {
+        const dist = (i - current + slides.length) % slides.length;
+        const off = offsets[dist % offsets.length];
+        polaroid.style.transform = `translate(${off.x}px, ${off.y}px) rotate(${off.rotate}deg) scale(0.94)`;
+        slide.style.zIndex = slides.length - dist;
+        slide.classList.remove('is-active');
+      }
+    });
+    dots.forEach((d, i) => d.classList.toggle('is-active', i === current));
+  }
+ 
+  function next() {
+    current = (current + 1) % slides.length;
+    render();
+  }
+  function prev() {
+    current = (current - 1 + slides.length) % slides.length;
+    render();
+  }
+ 
+  // Deslizar con el dedo (mobile) o el mouse (desktop) para cambiar de foto
+  let startX = 0;
+  let isDragging = false;
+  const SWIPE_THRESHOLD = 40;
+ 
+  function dragStart(x) {
+    isDragging = true;
+    startX = x;
+  }
+  function dragEnd(x) {
+    if (!isDragging) return;
+    isDragging = false;
+    const diff = startX - x;
+    if (diff > SWIPE_THRESHOLD) next();
+    else if (diff < -SWIPE_THRESHOLD) prev();
+  }
+ 
+  track.addEventListener('touchstart', (e) => dragStart(e.touches[0].clientX), { passive: true });
+  track.addEventListener('touchend', (e) => dragEnd(e.changedTouches[0].clientX));
+ 
+  track.addEventListener('mousedown', (e) => { dragStart(e.clientX); e.preventDefault(); });
+  track.addEventListener('mouseup', (e) => dragEnd(e.clientX));
+  track.addEventListener('mouseleave', () => { isDragging = false; });
+ 
+  render();
+});
+</script>
+
+
+</script>
+  <script>
+    AOS.init();
+
+    function copyToClipboard(text) {
+      const tempInput = document.createElement("input");
+      document.body.appendChild(tempInput);
+      tempInput.value = text;
+      tempInput.select();
+      document.execCommand("copy");
+      document.body.removeChild(tempInput);
+      alert(`Copiaste los datos de cuenta "${text}" a tu portapapeles`);
+    }
+
+    document.addEventListener("DOMContentLoaded", function () {
+      // Reproduce el audio en el primer scroll (los navegadores bloquean autoplay con sonido)
+      const audio = document.getElementById("myAudio");
+      const playOnScroll = () => {
+        audio.play().catch(e => console.warn("El navegador bloqueó la reproducción automática", e));
+        document.removeEventListener("scroll", playOnScroll);
+      };
+      document.addEventListener("scroll", playOnScroll);
+
+      // Acordeón de preguntas frecuentes (solo uno abierto a la vez)
+      const headers = document.querySelectorAll(".accordion-header");
+      headers.forEach((header) => {
+        header.addEventListener("click", function () {
+          const item = this.parentElement;
+          const wasActive = item.classList.contains("active");
+          headers.forEach((h) => h.parentElement.classList.remove("active"));
+          if (!wasActive) item.classList.add("active");
+        });
+      });
+    });
+  </script>
+
+</body>
+</html>
