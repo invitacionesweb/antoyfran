@@ -74,17 +74,17 @@
     <div class="icono2">
       <img data-aos="fade-down" src="./img-editable/icono2.png" alt="">
     </div>
-    
-</div>
-
-  <div class="novios">
-    <img data-aos="fade-up" src="./img-editable/fotos1.png" alt="">
-    <div class="icono1">
+     <div class="icono1">
       <div data-aos="fade-down" class="icon-svg1" role="img" aria-label="Ícono decorativo"></div>
     </div>
     <div class="icono2">
       <div data-aos="fade-down" class="icon-svg2" role="img" aria-label="Ícono decorativo"></div>
     </div>
+</div>
+
+  <div class="novios">
+    <img data-aos="fade-up" src="./img-editable/fotos1.png" alt="">
+   
   </div>
 
   <div class="timeline">
@@ -188,19 +188,40 @@ Moneda: UYU</p>
       <input type="text" name="NOMBRE" placeholder="Nombre" required>
       <input type="text" name="APELLIDO" placeholder="Apellido" required>
 
-      <select name="DIETA" required>
+      <select name="DIETA" id="dieta" required>
         <option value="" disabled selected>¿Alguna dieta especial?</option>
         <option value="Nada">Nada / Como de todo</option>
         <option value="Vegetariano">Vegetariano</option>
         <option value="Vegano">Vegano</option>
         <option value="Celíaco">Celíaco</option>
+        <option value="Otro">Alergias o restricciones</option>
       </select>
 
+      <input type="text" name="DIETA_OTRO" id="dieta-otro" placeholder="Contanos cuál" style="display:none;">
+
       <textarea name="MENSAJE" placeholder="Dejale un mensaje a los novios 🤍"></textarea>
-       <textarea name="CANCION" placeholder="Recomendale una canción al DJ 🎶"></textarea>
 
       <button type="submit" class="boton">Enviar</button>
     </form>
+
+    <script>
+    (function () {
+        var dietaSelect = document.getElementById('dieta');
+        var dietaOtro = document.getElementById('dieta-otro');
+
+        dietaSelect.addEventListener('change', function () {
+            if (this.value === 'Otro') {
+                dietaOtro.style.display = 'block';
+                dietaOtro.required = true;
+            } else {
+                dietaOtro.style.display = 'none';
+                dietaOtro.required = false;
+                dietaOtro.value = '';
+            }
+        });
+    })();
+    </script>
+</div>
 
     
   </div>
@@ -227,46 +248,55 @@ Moneda: UYU</p>
 
 <div class="carrusel-polaroid">
   <div class="carrusel-track">
-    
- 
+
+
     <div class="carrusel-slide" data-index="0">
-      <h3>La propuesta</h3>
+      <h3>Los inicios</h3>
       <div class="polaroid">
         <img src="./img-editable/carrusel1.png" alt="">
       </div>
       <p>Así empezó todo.</p>
-      
+
     </div>
- 
+
     <div class="carrusel-slide" data-index="1">
       <h3>Así somos</h3>
       <div class="polaroid">
         <img src="./img-editable/carrusel2.png" alt="">
       </div>
       <p>Riendo siempre es mejor.</p>
-     
+
     </div>
- 
+
     <div class="carrusel-slide" data-index="2">
-      <h3>El sí</h3>
+      <h3>La propuesta</h3>
       <div class="polaroid">
         <img src="./img-editable/carrusel3.png" alt="">
       </div>
       <p>El anillo que lo cambió todo.</p>
-    
+
     </div>
- 
+
     <div class="carrusel-slide" data-index="3">
-      <h3>Frente al mar</h3>
+      <h3>De viaje</h3>
       <div class="polaroid">
         <img src="./img-editable/carrusel4.png" alt="">
       </div>
       <p>Momentos que no se olvidan.</p>
-     
+
     </div>
- 
+
+    <div class="carrusel-slide" data-index="4">
+      <h3>Hoy</h3>
+      <div class="polaroid">
+        <img src="./img-editable/carrusel5.png" alt="">
+      </div>
+      <p>Y acá estamos, listos para el sí.</p>
+
+    </div>
+
   </div>
- 
+
   <div class="carrusel-nav">
     <div class="carrusel-dots"></div>
   </div>
@@ -297,12 +327,7 @@ Moneda: UYU</p>
  
 <div class="novios">
     <img data-aos="fade-up" src="./img-editable/fotos2.png" alt="">
-    <div class="icono1">
-      <div data-aos="fade-down" class="icon-svg1" role="img" aria-label="Ícono decorativo"></div>
-    </div>
-    <div class="icono2">
-      <div data-aos="fade-down" class="icon-svg2" role="img" aria-label="Ícono decorativo"></div>
-    </div>
+    
  </div>
 
 <div class="end">

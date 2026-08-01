@@ -240,14 +240,25 @@ audio::-webkit-media-controls-current-time-display {
         max-width: 800px;
 }
 .icono2 {
-  position: absolute; /* Se posiciona respecto al más cercano "relative" */
-  top: -40px;
-  left: -40px;
-  z-index: 10; /* Asegura que esté encima */
-  padding: 5px;
+    position: absolute;
+    bottom: -100px;
+    right: -10px;
+    z-index: 10;
+
 }
-.icono2 img {
-    width: 200px;
+
+.icon-svg2 {
+  width: 180px;   /* ajustá al tamaño que tenía la imagen */
+  height: 180px;
+  background-color: var(--color-1);
+  -webkit-mask-image: url('./img-editable/icono4.svg');
+  mask-image: url('./img-editable/icono4.svg');
+  -webkit-mask-size: contain;
+  mask-size: contain;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  mask-position: center;
 }
 /*FOTOS*/
 .novios {
@@ -357,7 +368,7 @@ audio::-webkit-media-controls-current-time-display {
 
 .icono4 {
     position: absolute;
-    bottom: -80px;
+    bottom: -120px;
     right: -10px;
     z-index: 10;
 
