@@ -420,24 +420,18 @@ audio::-webkit-media-controls-current-time-display {
   -webkit-mask-position: center;
   mask-position: center;
 }
-
 .icono7 {
     width: 100%;
     margin: auto;
-    padding: 0;
+    padding: auto;
 }
 
 .icon-svg7 {
-  width: 180px;   /* ajustá al tamaño que tenía la imagen */
+  width: 180px;   /* ajustÃ¡ al tamaÃ±o que tenÃ­a la imagen */
   height: 180px;
   margin: auto;
-  padding: 0;
-  /* Antes usaba var(--color-2), el mismo color que el fondo de
-     .accordion / .novios2 / .playlist / footer, así que se fundía
-     con el fondo y quedaba invisible. Ahora usa blanco para contrastar;
-     si esta sección tiene fondo claro, cambiá esto a var(--color-1) o
-     var(--color-2) según corresponda. */
-  background-color: var(--color-0);
+    padding: auto;
+  background-color: var(--color-2);
   -webkit-mask-image: url('./img-editable/icono7.svg');
   mask-image: url('./img-editable/icono7.svg');
   -webkit-mask-size: contain;
